@@ -8,5 +8,5 @@ node {
         def mvnHome= tool name: 'sagar', type: 'maven'
         sh "${mvnHome}/bin/mvn clean package " 
     }
-    stage
+    
 }
