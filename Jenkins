@@ -5,6 +5,8 @@ node {
     }
     stage('maven')
     {
-        sh 'mvn clean package' 
+        def mvnHome= tool name: 'sagar', type: 'maven'
+        sh "${mvnHome}/bin/mvn clean package " 
     }
+    stage
 }
