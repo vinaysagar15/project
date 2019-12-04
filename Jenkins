@@ -1,0 +1,10 @@
+node {
+    stage('clone')
+    {
+        git 'https://github.com/surajr3/simple-java-maven-app.git'
+    }
+    stage('maven')
+    {
+        sh 'mvn clean package' 
+    }
+}
